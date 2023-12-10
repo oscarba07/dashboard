@@ -42,7 +42,7 @@ if (!file.exists(carpeta_visual)){
 
 # Se define el token (Seguir indicaciones para obtenerlo aqui: 
 # https://www.inegi.org.mx/servicios/api_indicadores.html
-token <- 'de7fa498-b2e8-f747-cf22-4895402afa13'
+token <- '###'
 
 # Se definen los indicadores con base en la construcción de indicadores de INEGI
 
