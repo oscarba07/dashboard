@@ -1,7 +1,7 @@
 ### Este codigo descarga los archivos necesarios para crear un mapa de los 
 ### estados y municipios de Mexico
 
-setwd("D:/OIT/Stats")
+setwd("###")
 
 options(timeout=30000000)
 url<-"https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/889463849568_s.zip" #diciembre 2021
