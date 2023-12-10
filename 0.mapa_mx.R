@@ -1,5 +1,5 @@
 # Mapa de estados ---------------------------------------------------------
-setwd('D:/OIT/Stats')
+setwd('###')
 
 carpeta_json <- paste0(getwd(),'/Mapa/json')
 
