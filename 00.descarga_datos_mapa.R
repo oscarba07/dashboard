@@ -45,7 +45,7 @@ url<-"https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol
 }
 # Leer paquetes necesarios ------------------------------------------------
 {
-  paquetes <- c("rgdal", "geojsonio", "rmapshaper", "spdplyr",
+  paquetes <- c("rgdal", "geojsonio", "rmapshaper", #"spdplyr",
                 "jsonlite", "highcharter", "plotly","sf")
   
   for (paq in paquetes) {
@@ -89,8 +89,7 @@ geojson_write(area_entjson,file = paste0(carpeta_json,"/ent.geojson"))
 
 # Crear jsons por estado
 for(i in 1:32){
-  edo <- area_m%>% 
-    filter(CVE_ENT == i)
+  edo <- area_m[area_m@data$CVE_ENT==formatC(i,digits = 1, format = "d", flag = "0"),]
   #Convertir a JSON
   edo_json<-geojson_json(edo)
   #guardar
