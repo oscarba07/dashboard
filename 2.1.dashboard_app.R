@@ -1,25 +1,14 @@
-paquetes <- c('shiny', 'magrittr', 'plotly', 'bslib', 'htmltools', 'zoo',
-              'rgdal', 'dplyr', 'ggplot2', 'shinydashboard')
-
-for (paq in paquetes) {
-  if (!require(paq, character.only = T)) {
-    install.packages(paq)
-    library(paq, character.only = T)
-  }
-}
-
-
-#{library(shiny, quietly = T)
-#library(magrittr, quietly = T)
-#library(plotly, quietly = T)
-#library(bslib, quietly = T)
-#library(htmltools, quietly = T)
-#library(zoo, quietly = T)
+{library(shiny, quietly = T)
+library(magrittr, quietly = T)
+library(plotly, quietly = T)
+library(bslib, quietly = T)
+library(htmltools, quietly = T)
+library(zoo, quietly = T)
 #library(rgdal, quietly = T)
-#library(dplyr, quietly = T)
-#library(ggplot2, quietly = T)
-#library(shinydashboard, quietly = T)
-#    }
+library(dplyr, quietly = T)
+library(ggplot2, quietly = T)
+library(shinydashboard, quietly = T)
+    }
 
 # Definiciones generales
 ## Carga de datos y vectores de apoyo
